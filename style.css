@@ -143,7 +143,7 @@ img {
 }
 
 .servicio {
-    padding: 50px 0 100px 0;
+    padding: 5px 0 50px 0;
     text-align: center;
     background-color: #fafafa;
 }
@@ -152,6 +152,7 @@ img {
     color: #323232;
     font-size: 50px;
     margin-bottom: 15px;
+    padding-top: 20px;
 }
 
 .servicio-content {
@@ -174,6 +175,13 @@ img {
 
 .servicio-1 h3 {
     font-size: 20px;
+    color: #323232;
+    text-transform: capitalize;
+    text-transform: uppercase;
+}
+
+.servicio-1 h4 {
+    font-size: 14px;
     color: #323232;
     text-transform: capitalize;
 }
