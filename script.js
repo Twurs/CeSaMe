@@ -1,19 +1,3 @@
-import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js';
-import { getFirestore, collection, addDoc } from 'https://www.gstatic.com/firebasejs/9.19.1/firebase-firestore.js';
-
-const firebaseConfig = {
-    apiKey: "AIzaSyCIw4_0CEqyrRfs-lbN3RAk3SaFwQaOTAE",
-    authDomain: "cesame-bfe8b.firebaseapp.com",
-    projectId: "cesame-bfe8b",
-    storageBucket: "cesame-bfe8b.appspot.com",
-    messagingSenderId: "14152844294",
-    appId: "1:14152844294:web:43ad0232fa64281b336f87",
-    measurementId: "G-G77LC6B2Y5"
-};
-
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
-
 const form = document.getElementById("informationForm")
 form.addEventListener("submit", async (e) => {
     e.preventDefault();
@@ -28,7 +12,18 @@ form.addEventListener("submit", async (e) => {
     });
 
     try {
-        await addDoc(collection(db, "questions"), data);
+        const response = await fetch('http://localhost:3000/saveQuestionForm', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        });
+
+        if (!response.ok) {
+            throw new Error('Error en la solicitud');
+        }
+
         e.target.reset()
         alert("Su solicitud ha sido enviada con éxito");
     }
