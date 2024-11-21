@@ -14,7 +14,7 @@
 
 <body>
     <div class="menu container">
-        <a href="a" class="logo">logo</a>
+        <img src="./img/CeSaMeFinal.png" class="logo" alt="Cesame Logo">
         <input type="checkbox" id="menu" />
         <label for="menu">
             <img src="./img/menu.png" class="menu-icono" alt="menu">
@@ -132,8 +132,22 @@
                 </div>
 
                 <div class="input-container">
-                    <input type="number" id="ageField" name="age" placeholder="Edad">
-                    <i class="fa-solid fa-phone"></i> <!-- CAMBIAR EL ICONO -->
+                    <input type="number" id="ageField" name="age" placeholder="Edad" min="4" max="120">
+                    <i class="fa-solid fa-person"></i>
+                </div>
+
+                <div class="input-container">
+                    <select name="doctor">
+                        <option value="Dr. Zagorsky">Dr. Zagorsky</option>
+                        <option value="Dra. Pompeo">Dra. Pompeo</option>
+                        <option value="Dra. Firenzzi">Dra. Firenzzi</option>
+                        <option value="Dr. Amador">Dr. Amador</option>
+                        <option value="Dr. Martinez">Dr. Martinez</option>
+                        <option value="Dra. Juarez">Dra. Juarez</option>
+                        <option value="Dr. Mainero">Dr. Mainero</option>
+                        <option value="Dra. Maranetto">Dra. Maranetto</option>
+                    </select>
+                    <i class="fa-solid fa-user-doctor"></i>
                 </div>
 
                 <div class="input-container">
@@ -159,19 +173,8 @@
     <footer class="footer" id="contacto">
         <div class="footer-content container">
             <div class="link">
-                <a href="#header" class="logo">Logo</a>
+                <img src="./img/CeSaMeFinal.png" class="logo" alt="Cesame Logo">
             </div>
-
-            <div class="link">
-                <ul>
-                    <li><a href="a">aaaa</a></li>
-                    <li><a href="a">bbbb</a></li>
-                    <li><a href="a">cccc</a></li>
-                    <li><a href="a">dddd</a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
 
 </body>
 

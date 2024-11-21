@@ -58,10 +58,7 @@ img {
 }
 
 .logo {
-    font-size: 25px;
-    font-weight: 800;
-    color: #02B1F4;
-    text-transform: uppercase;
+    width: 206px;
 }
 
 #menu {
@@ -224,7 +221,8 @@ form h2 {
 }
 
 .input-container>input,
-textarea {
+textarea,
+select {
     padding: 17px 15px 17px 65px;
     width: 100%;
     margin-bottom: 25px;
@@ -234,7 +232,11 @@ textarea {
     font-size: 16px;
     outline: none;
     color: #323232;
+    appearance: none;
+    background-image: none;
 }
+
+
 
 textarea {
     font-family: 'Poppins', sans-serif;
