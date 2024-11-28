@@ -39,6 +39,7 @@ img {
     align-items: center;
     justify-content: space-between;
     background-color: #ffffff;
+    z-index: 50;
 }
 
 .menu .navbar ul li {

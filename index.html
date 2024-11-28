@@ -127,17 +127,17 @@
 
             <div class="input-group">
                 <div class="input-container">
-                    <input type="text" id="nameField" name="name" placeholder="Nombre y Apellido">
+                    <input type="text" id="nameField" name="name" placeholder="Nombre y Apellido" required>
                     <i class="fa-solid fa-user"></i>
                 </div>
 
                 <div class="input-container">
-                    <input type="number" id="ageField" name="age" placeholder="Edad" min="4" max="120">
+                    <input type="number" id="ageField" name="age" placeholder="Edad" min="4" max="120" required>
                     <i class="fa-solid fa-person"></i>
                 </div>
 
                 <div class="input-container">
-                    <select name="doctor">
+                    <select name="doctor" required>
                         <option value="Dr. Zagorsky">Dr. Zagorsky</option>
                         <option value="Dra. Pompeo">Dra. Pompeo</option>
                         <option value="Dra. Firenzzi">Dra. Firenzzi</option>
@@ -151,13 +151,19 @@
                 </div>
 
                 <div class="input-container">
-                    <input type="tel" id="phoneField" name="phone" placeholder="Teléfono Celular">
+                    <input type="tel" id="phoneField" name="phone" placeholder="Teléfono Celular" required>
                     <i class="fa-solid fa-phone"></i>
                 </div>
 
                 <div class="input-container">
-                    <input type="email" id="emailField" name="email" placeholder="Email">
+                    <input type="email" id="emailField" name="email" placeholder="Email" required>
                     <i class="fa-solid fa-envelope"></i>
+                </div>
+
+                <div class="input-container">
+                    <input type="datetime-local" id="timeField" name="schedule"
+                        placeholder="Selecciona fecha y hora de consulta" required step="1800" min="">
+                    <i class="fa-solid fa-calendar-days"></i>
                 </div>
 
                 <div class="input-container">
