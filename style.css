@@ -402,3 +402,16 @@ textarea {
     }
 
 }
+
+footer {
+    margin: 30px;
+}
+
+footer p {
+    text-align: center;
+}
+
+.soporte {
+    font-size: 25px;
+    font-family: "Poppins", "sans-serif";
+}
